@@ -1,0 +1,40 @@
+body {
+
+    color: #404040;
+    font-size: 11pts;
+    font-family: Georgia, 'Times New Roman';
+    margin: auto;
+    width: 1000px;
+    background-repeat: repeat;
+    background-image: url("silverware.jpg");
+    background-attachment: fixed;
+}
+
+.heading {
+    color: #A4A400;
+    text-decoration-line: underline;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode;
+    ;
+
+}
+
+.h1 {
+    font-size: 22pt;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 18pt;
+    text-align: left;
+
+}
+
+a {
+    color: #a4a400;
+}
+
+div {
+    background-color: #FFFFa8;
+    margin-left: 50px;
+}
