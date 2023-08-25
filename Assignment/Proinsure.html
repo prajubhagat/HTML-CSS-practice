@@ -2,55 +2,361 @@
 <html>
 
 <head>
-    <title>Proinsure</title>
+    <title>proinsure</title>
     <style>
-        .heading {
-            font-size: 36px;
-            color: rgb(34, 4, 54);
-            font-family: sans-serif;
+       
+        body {
+            font-family: "karel", sans-serif;
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.5;
+            display:block;
+    
+        }
+        a {
             text-decoration: none;
-            font-weight: bold;
-            padding: 16px;
+        }
+
+        h1, h2, h3,h4, h5, h6 {
+            font-family:"DM Serif Display", serif;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* header */
+        .header {
             background-color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding: 16px 0;
         }
 
-        .link {
-            font-size: 20px;
-            color: rgb(142, 78, 171);
-            text-transform: uppercase;
+        .proinsure {
+            font-size: 36px;
+            font-family: "DM Serif Display", serif;
+            color: #2c2541;
             text-decoration: none;
-            padding: 20px;
-
+            font-weight: 900;
         }
 
-        .link :hover {
-            color: rgb(34, 4, 54);
-        }
-
-        .button {
-            border-radius: 2px;
-            padding: 6px;
-            border: 1px solid black;
+        .nav a {
             font-size: 20px;
-            color: rgb(142, 78, 171);
+            margin-left: 32px;
+            color: #6e6b74;
             text-transform: uppercase;
-            text-decoration: none;
+            font-weight: 700;
+        }
 
+        .nav a:hover {
+            color: #2c2641;
+        }
 
+        /* button */
 
+        .btn {
+            padding: 12px;
+            color: #6e6b74;
+            box-sizing: border-box;
+            border: 1px solid #6e6b74;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700px;
+        }
+
+        .btn:hover {
+            background-color: #2c2641;
+            color: white;
+        }
+
+        .nav .btn:hover {
+            color: white;
+        }
+
+        .btn2 {
+            border-color: white;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .btn2:hover {
+            background-color: white;
+            color: #2c2640;
+        }
+
+        .padding {
+            padding: 80px 0px;
+        }
+
+        .heading {
+            font-size: 48px;
+            color: #2d2640;
+        }
+
+        .img {
+            width: 100%;
+
+        }
+
+        /*article1*/
+        .art1 {
+            margin-top: 88px;
+            background-color: #2d2640;
+            color: white;
+            padding: 60px 0;
+
+        }
+
+        .art1-heading {
+            font-size: 56px;
+            margin-top: 15px;
+        }
+
+        p .art1-text {
+            color: #bcb8c4;
+            font: 18px karla, sans-serif;
+            margin: 32px 0px;
+        }
+
+        .line {
+            width: 200px;
+            height: 2px;
+            background-color: #bcb8c4;
+            
+        }
+
+        /*article2 */
+
+        .art2 {
+            margin-top: 80px;
+            background-color: white;
+            color: #2d2640;
+            padding: 80px 0;
+            font-size: 48px;
+        }
+
+        .art2-heading {
+            font-size: 48px;
+            color: #2d2640;
+        }
+
+        .art2-text {
+            color: #6e6b74;
+            font-size: 20px;
+            margin: 24px 0px;
+            line-height:1.6;
+
+        }
+
+        .col1 {
+            flex: 0 1 45%;
+        }
+
+        .aimg {
+            margin-bottom: -160px;
+        }
+
+        .feature header {
+            margin-bottom: 40px;
+        }
+
+        .feature h3 {
+            font-size: 32px;
+            color: #2d2640;
+            text-transform: uppercase;
+            margin: 24px 0 8px 0;
+        }
+
+        .feature p {
+            color: #6e6b74;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #8ab4f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .align-start {
+            align-items: flex-start;
+        }
+
+        .col2 {
+            flex: 0 1 30%;
+        }
+        /*footer */
+        .footer {
+            margin-top:60px;
+        }
+        .footer h2 {
+            font-size:36px;
+        }
+        .footer a {
+            color:#6e6b74;
+            margin-left:32px;
+            font-size:24px;
+        }
+        .footer a:hover {
+            color:#2c2641;
+        }
+        .footer-nav {
+            text-align:center;
+            padding:24px 0;
+            
+        }
+        .social {
+            border-bottom:1px solid #6e6b74;
+        }
+
+        .copyright {
+            text-align:center;
+            background-color:#2d2640;
+            color:#cbc9c9;
+            font-size:20px;
+            padding:32px 0;
+        }
+        .cta {
+            color:white;
+        }
+        .cta .container {
+            padding:80px 60px;
+            background-color: #2d2640;
+        }
+        .cta h3 {
+            font-size:44px;
         }
     </style>
+    <script src="https://kit.fontawesome.com/5e67d1849c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
-        <a class="heading" href="#">Proinsure</a>
-        <a class="link" href="#home">home</a>
-        <a class="link" href="#about">about</a>
-        <a class="link" href="#contact">contact</a>
-        <a class=" button" href="#view plans">view plans</a>
+    <header class="header">
+        <div class="flex container">
+            <a class="proinsure" href="#">Proinsure</a>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+                <a class="btn" href="#view plans">VIEW PLANS</a>
+            </nav>
+        </div>
+    </header>
 
-    </div>
+    <main>
+        <section class="art1">
+            <article class=" flex container">
+                <div class=".col1">
+                    <div class="line"></div>
+                    <h1 class="art1-heading">Humanazing Your Insurance</h1>
+                    <p class="art1-text"> Lorem ispum dolor sit amet consectetureadipisicing elit.
+                        Consequatur explicabo temporibus alias magni distinctio sunt unde
+                        architecto ipsum dicta, praesentium amet est dolore.</p>
+                    <a class="btn btn2" href="#View Plans">View Plans</a>
+                </div>
+                <div class="col1"></div>
+                <img class="img aimg" src="C:\full stack java\Assignment\Proinsure\01.png" alt="Man with his child">
+            </article>
+        </section>
+
+        <section class="art2 padding">
+            <article class="flex container">
+                <div class="col1">
+                    <img class="img" src="C:\full stack java\Assignment\Proinsure\02.png"
+                        alt="Man with kids in the field">
+                </div>
+                <div class="col1">
+                    <h2 class="art2-heading">About the insure</h2>
+                    <p class="art2-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio rem sequi, fuga laboriosam maiores voluptatum in
+                        ducimus ipsum animi placeat labore</p>
+                    <a class="btn" href="#">Know More</a>
+                </div>
+            </article>
+        </section>
+
+        <section class=" feature padding">
+            <div class="container">
+                <header>
+                    <div class="line"></div>
+                    <h2 class="heading">We are different</h2>
+                </header>
+                <div class="flex align-start">
+                    <div class="col2">
+                        <div class="icon"></div>
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Easy Process</h3>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                        et provident commodi atque fugiat sequi ex unde dolores.</p>
+                </div>
+                <div class="col2">
+                    <div class="icon"></div>
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Affordable price</h3>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                    et provident commodi atque fugiat sequi ex unde dolores.</p>
+            </div>
+
+            <div class="col2">
+                <div class="icon"></div>
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>You come first</h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                et provident commodi atque fugiat sequi ex unde dolores.</p>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container flex">
+                <h3>Find out more <br>
+                    about how we work</h3>
+                     <a class="btn btn2" href="#">How we work</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex social">
+                <h2>Proinsure</h2>
+                <nav>
+                    <a href="#"><i class="Fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="Fab fa-facebook-square"></i></a>
+                </nav>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">How we work</a>
+            </nav>
+        </div>
+
+        <div class="copyright">
+            <small>&copy; AltCampus Services Pvt Ltd, 2018-present</small>
+        </div>
+    </footer>
 </body>
 
 </html>

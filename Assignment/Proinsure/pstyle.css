@@ -24,6 +24,8 @@ body{
     border: 1px solid #6e6b74;
     border-radius: 3px;
     display:inline-block;
+    font-size:20px;
+    font-weight:700px;
 }
 
 .btn:hover {
@@ -106,4 +108,13 @@ img1 {
 
 .himg {
     margin-bottom: -160px;
+}
+
+.col1 {
+    flex: 0 1 45%''
+}
+
+.heading {
+    font-size:48px;
+    color:#2d2640;
 }
