@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proinsure</title>
     <style>
-       
         body {
             font-family: "karel", sans-serif;
             font-size: 16px;
             margin: 0;
             line-height: 1.5;
-            display:block;
-    
+            display: block;
+
         }
         a {
             text-decoration: none;
         }
-
-        h1, h2, h3,h4, h5, h6 {
-            font-family:"DM Serif Display", serif;
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "DM Serif Display", serif;
         }
+
         .flex {
             display: flex;
             justify-content: space-between;
@@ -123,17 +124,18 @@
             margin-top: 15px;
         }
 
-        p .art1-text {
+        .art1-text {
             color: #bcb8c4;
             font: 18px karla, sans-serif;
             margin: 32px 0px;
+            line-height: 1.6;
         }
 
         .line {
             width: 200px;
             height: 2px;
             background-color: #bcb8c4;
-            
+
         }
 
         /*article2 */
@@ -155,7 +157,7 @@
             color: #6e6b74;
             font-size: 20px;
             margin: 24px 0px;
-            line-height:1.6;
+            line-height: 1.6;
 
         }
 
@@ -174,7 +176,7 @@
         .feature h3 {
             font-size: 32px;
             color: #2d2640;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin: 24px 0 8px 0;
         }
 
@@ -200,46 +202,55 @@
         .col2 {
             flex: 0 1 30%;
         }
+
         /*footer */
         .footer {
-            margin-top:60px;
+            margin-top: 60px;
         }
+
         .footer h2 {
-            font-size:36px;
+            font-size: 36px;
         }
+
         .footer a {
-            color:#6e6b74;
-            margin-left:32px;
-            font-size:24px;
+            color: #6e6b74;
+            margin-left: 32px;
+            font-size: 24px;
         }
+
         .footer a:hover {
-            color:#2c2641;
+            color: #2c2641;
         }
+
         .footer-nav {
-            text-align:center;
-            padding:24px 0;
-            
+            text-align: center;
+            padding: 24px 0;
+
         }
+
         .social {
-            border-bottom:1px solid #6e6b74;
+            border-bottom: 1px solid #6e6b74;
         }
 
         .copyright {
-            text-align:center;
-            background-color:#2d2640;
-            color:#cbc9c9;
-            font-size:20px;
-            padding:32px 0;
+            text-align: center;
+            background-color: #2d2640;
+            color: #cbc9c9;
+            font-size: 20px;
+            padding: 32px 0;
         }
+
         .cta {
-            color:white;
+            color: white;
         }
+
         .cta .container {
-            padding:80px 60px;
+            padding: 80px 60px;
             background-color: #2d2640;
         }
+
         .cta h3 {
-            font-size:44px;
+            font-size: 44px;
         }
     </style>
     <script src="https://kit.fontawesome.com/5e67d1849c.js" crossorigin="anonymous"></script>
@@ -260,7 +271,7 @@
 
     <main>
         <section class="art1">
-            <article class=" flex container">
+            <article class=" flex container align-start">
                 <div class=".col1">
                     <div class="line"></div>
                     <h1 class="art1-heading">Humanazing Your Insurance</h1>
@@ -298,7 +309,7 @@
                 </header>
                 <div class="flex align-start">
                     <div class="col2">
-                        <div class="icon"></div>
+                        <div class="icon">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Easy Process</h3>
@@ -306,22 +317,22 @@
                         et provident commodi atque fugiat sequi ex unde dolores.</p>
                 </div>
                 <div class="col2">
-                    <div class="icon"></div>
-                    <i class="fas fa-cogs"></i>
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Affordable price</h3>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                        et provident commodi atque fugiat sequi ex unde dolores.</p>
                 </div>
-                <h3>Affordable price</h3>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-                    et provident commodi atque fugiat sequi ex unde dolores.</p>
-            </div>
 
-            <div class="col2">
-                <div class="icon"></div>
-                <i class="fas fa-cogs"></i>
-            </div>
-            <h3>You come first</h3>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-                et provident commodi atque fugiat sequi ex unde dolores.</p>
-            </div>
+                <div class="col2">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>You come first</h3>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                        et provident commodi atque fugiat sequi ex unde dolores.</p>
+                </div>
             </div>
             </div>
         </section>
@@ -330,7 +341,7 @@
             <div class="container flex">
                 <h3>Find out more <br>
                     about how we work</h3>
-                     <a class="btn btn2" href="#">How we work</a>
+                <a class="btn btn2" href="#">How we work</a>
             </div>
         </section>
     </main>
@@ -340,8 +351,8 @@
             <div class="flex social">
                 <h2>Proinsure</h2>
                 <nav>
-                    <a href="#"><i class="Fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="Fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
                 </nav>
             </div>
 
