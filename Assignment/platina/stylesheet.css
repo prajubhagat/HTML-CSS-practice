@@ -23,6 +23,12 @@ body {
 
 }
 
+.flex1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Header */
 .header {
     padding: 20px 0;
@@ -49,8 +55,6 @@ body {
     color: rgba(246, 46, 113, 1);
 
 }
-
-
 
 /*button */
 
@@ -112,7 +116,7 @@ body {
     bottom: 0;
     height:0;
     width: 100%;
-    transition: .2s ease;
+    transition: 1s ease-in;
     overflow: hidden;
     background-image: linear-gradient(to top, rgba(246, 46, 113, 0.8), rgba(249, 171, 114, 0.8));
 }
@@ -207,7 +211,7 @@ body {
 .img {
     display: block;
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .block1 {
@@ -227,13 +231,16 @@ body {
     font-size: 35px;
     background-image: linear-gradient(to top, rgba(246, 46, 113, 1), rgba(249, 171, 114, 1));
     line-height: 1.2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
 }
 
-inr {
+.fa {
     font-size: 35px;
 }
 
-inr:hover {
+.fa:hover {
     background-image: linear-gradient(to top, rgba(246, 46, 113, 0.8), rgba(249, 171, 114, 0.8));
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
