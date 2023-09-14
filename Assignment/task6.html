@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(159, 152, 152);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            height: 50px;
+            background-color: rgb(197, 190, 190);
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            top: 50%;
+            box-shadow: 3px 2px 5px 2px gray;
+        }
+
+        #text {
+
+            transform: translate(100%);
+            animation: mymove 5s linear infinite;
+            position: relative;
+        }
+
+        @keyframes mymove {
+            from {
+
+                transform: translate(100%);
+            }
+
+            to {
+
+                transform: translate(0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="text">This text is scrolling from left to right inside a div container.</p>
+    </div>
+</body>
+
+</html>
