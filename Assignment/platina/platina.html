@@ -108,7 +108,7 @@
                     conduct.</p>
             </div>
 
-            <div class="art"> 
+            <div class="art">
                 <span class="lnr lnr-gift"></span>
                 <h4>Holiday Packages</h4>
                 <p class="p2">inapproprite behavior is often laughed off as "boys will be boys," women face higher
@@ -194,8 +194,8 @@
             </div>
         </div>
     </section>
-<!--6th-->
-    <section class="container padding">
+    <!--6th-->
+    <section class="container padding shadow">
         <div>
             <h1 class="h1">Book a Room</h1>
             <p class="para margin">
@@ -204,14 +204,59 @@
             </p>
         </div>
 
-        <div class="container flex">
+        <div class="container flex ">
             <div>
-                <form action="/action_page.php">
-                    <input type="text" id=fname name="fname" placeholder="First Name" >
-                    <input type="text" id=fname name="arrival" placeholder="Arrival"> 
-                </form>
+                <form action="/booking.php" target="_blank">
+                    <input type="text" class="form form-control" name="fname" value="First Name">
+                    <input type="text" class="form form-control" name="arrival" value="Arrival">
+                    <select class="select form-control" name="Room Type">
+                        <option value="Room Type">Room Type</option>
+                        <option value="Room Type1">Room Type1</option>
+                        <option value="Room Type2">Room Type2</option>
+                        <option value="Room Type3">Room Type3</option>
+                    </select>
+                    
+                    <select class="select form-control" name="Adults">
+                        <option value="Adults">Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+            </div>
+            
+            <div>
+                <input type="text" class="form form-control" name="lname" value="Last Name">
+                
+                <input type="Departure" class="form form-control" name="departure" value="Departure">
+
+                <select class="select form-control" name="no. of Rooms">
+                    <option value="no. of Rooms">Number of Rooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <select class="select form-control" name="Childs">
+                    <option value="childs">Childs</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            
+            <div class="msg">
+                <textarea name="message" rows="18" cols="60"></textarea><br>
             </div>
         </div>
+        </form>
+        <div class="move">
+            <button class="btn2">
+                Book room &nbsp
+                <span class="lnr lnr-arrow-right"></span>
+            </button>
+
+        </div>
+
     </section>
 
     <!--7th-->
@@ -256,7 +301,7 @@
     <!--footer-->
     <footer class="footer">
         <div class="container flex">
-            <div >
+            <div>
                 <h6>About Us</h6>
                 <p class="para2">
                     Lorem ipsum dolor sit amet, <br>
@@ -269,9 +314,7 @@
                 <h6>Newsletter</h6>
                 <p class="para2">Stay update with our latest</p><br>
 
-                <form target="_blank" action="/action.php" method="get">
-                    <div class="flex"></div>
-                </form>
+
             </div>
         </div>
     </footer>

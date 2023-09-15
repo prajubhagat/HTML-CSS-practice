@@ -2,6 +2,7 @@
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .container {
@@ -81,12 +82,17 @@ body {
 }
 
 .btn2 {
-    padding: 12px 28px;
+    padding: 10px 30px;
     color: #ffffff;
     background-color: #222;
     border-radius: 20px;
-    border: 1px solid #777;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, rgba(246, 46, 113, 0.8), rgba(249, 171, 114, 0.8));
     font-size: 14px;
+    margin-left: 500px;
 }
 
 .btn2:hover {
@@ -224,7 +230,8 @@ body {
 /* forth */
 .lnr {
     font-size: 35px;
-    padding-bottom: 30px;
+   padding-top:10px;
+   padding-bottom: 10px;
 }
 
 .lnr:hover {
@@ -271,10 +278,50 @@ h4 {
 /*6th */
 .form {
     margin-bottom: 30px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
+    border-radius: 0;
+}
+.margin {
+    margin-bottom:80px;
+}
+.select {
+    font-size:14px;
+    font-weight: 200px;
+    margin-bottom: 20px;
+    color:#777777;
+    border-radius: 0;
+}
+.form-control {
+    display:block;
+    width:100%;
+    padding:20px 30px;
+    color:#495057;
+    background-color: #fff;
+    line-height: 1.25;
+    border:1px solid rgba(0, 0, 0, 0.15);
+    transition:border-color ease-in-out 0.20s, box-shadow ease-in-out 0.20s;
 }
 
+.msg {
+    width:800px;
+    padding: 8px 12px;
+    margin: 0px 0px 30px;
+    height: 92%;
+}
+.lnr-arrow-right {
+    font-size:15px;
+}
+span {
+    display:inline-block;
+}
+div.move:hover .btn2 span{
+    transform: translate(15px);
+    transition:.5s ease-in;
+}
+.shadow {
+    box-shadow:-20px 20px 30px 0px rgba(158, 158, 158,0.4);
+}
 /*7th */
 
 .row {
