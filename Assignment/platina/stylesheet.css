@@ -347,8 +347,45 @@ h6 {
 }
 
 .para2 {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 200px;
     line-height: 1.6em;
     color:#777777;
 }
+
+.gallery2 {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+.divC {
+    flex: 1;
+    padding: 5px;
+    min-width: 25%;
+    box-sizing: border-box;
+}
+
+.imgF {
+    height:auto;
+    display: block;
+    margin-right: 0;
+    min-width: 100%;
+}
+.paraF {
+    margin-top: 90px;
+    margin-left: 380px;
+}
+
+.lastbtn {
+    background-image: linear-gradient(to top, rgba(246, 46, 113, 0.8), rgba(249, 171, 114, 0.8));
+    border: 1px;
+}
+
+#submit {
+    color:#777;
+}
+.fLast {
+    
+    color:#f7427f;
+}
+
